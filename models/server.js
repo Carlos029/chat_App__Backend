@@ -12,7 +12,7 @@ class Server {
         this.server = createServer(this.app);
         this.io = require('socket.io')(this.server, {
             cors:{
-                origin: [process.env.CLIENT_HOSTING_URL]  /// dar acceso al url donde se encuentra nuestro cliente
+                origin: ['*']  /// dar acceso al url donde se encuentra nuestro cliente
             }
         });
 
