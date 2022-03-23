@@ -10,7 +10,6 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });
 
-console.log()
 
 module.exports={
     admin
